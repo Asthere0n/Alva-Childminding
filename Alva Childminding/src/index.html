@@ -5,46 +5,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alva Childminding Service</title>
+    <link rel="icon" type="image/x-icon" href="../resource/img/rainbow.png">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="w-full">
 
-    <header class="flex justify-around lg:justify-between items-center bg-slate-200 w-full py-2">
-        <a href="index.html"><img class="w-20 ml-4"
-                src="../img/Daycare-Logo-Early-Learning-Vector-Graphics-14604774-1-removebg-preview.png"
+    <header class="flex justify-between items-center bg-slate-200 w-full">
+        <a href="index.html"><img class="w-28 ml-4" src="../resource/img/Logo-Alva-Childminding.png"
                 alt="Alva Childminding"></a>
+
         <h1 class="text-2xl font-bold">Alva Childminding Services</h1>
-        <ul class="m-4 hidden lg:flex">
-            <li class="m-2 px-4 py-2 rounded-lg bg-slate-300 w-24 text-center hover:bg-yellow-400"><a href="#">Home</a>
-            </li>
-            <li class="m-2 px-4 py-2 rounded-lg bg-slate-300 w-24 text-center hover:bg-red-400"><a href="#">Premises</a>
-            </li>
-            <li class="m-2 px-4 py-2 rounded-lg bg-slate-300 w-24 text-center hover:bg-green-400"><a
-                    href="#">Services</a></li>
-            <li class="m-2 px-4 py-2 rounded-lg bg-slate-300 w-24 text-center hover:bg-blue-400"><a href="#">About
-                    us</a></li>
-        </ul>
+
+        <nav>
+            <ul class=" flex">
+
+                <li class="m-2 rounded-lg bg-slate-300 w-28 text-center hover:bg-red-400 hover:svg:text-white">
+                    <a href="index.html" class="px-4 py-2 flex flex-col items-center justify-between">
+                        <svg class="" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                            width="24px" fill="#dc2626">
+                            <path
+                                d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z" />
+                        </svg>
+                        <span>Home</span>
+                    </a>
+                </li>
+
+                <li class="m-2 rounded-lg bg-slate-300 w-28 text-center hover:bg-yellow-400">
+                    <a href="enquire.html" class="px-4 py-2 flex flex-col items-center justify-between">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#ca8a04">
+                            <path
+                                d="M438-226 296-368l58-58 84 84 168-168 58 58-226 226ZM200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Z" />
+                        </svg>
+                        <span>Enquire</span>
+                    </a>
+                </li>
+
+                <li class="m-2 py-2 rounded-lg bg-slate-300 w-28 text-center hover:bg-green-400">
+                    <a href="gallery.html" class="flex flex-col items-center justify-between">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#16a34a">
+                            <path
+                                d="M120-200q-33 0-56.5-23.5T40-280v-400q0-33 23.5-56.5T120-760h400q33 0 56.5 23.5T600-680v400q0 33-23.5 56.5T520-200H120Zm600-320q-17 0-28.5-11.5T680-560v-160q0-17 11.5-28.5T720-760h160q17 0 28.5 11.5T920-720v160q0 17-11.5 28.5T880-520H720Zm40-80h80v-80h-80v80ZM120-280h400v-400H120v400Zm40-80h320L375-500l-75 100-55-73-85 113Zm560 160q-17 0-28.5-11.5T680-240v-160q0-17 11.5-28.5T720-440h160q17 0 28.5 11.5T920-400v160q0 17-11.5 28.5T880-200H720Zm40-80h80v-80h-80v80Zm-640 0v-400 400Zm640-320v-80 80Zm0 320v-80 80Z" />
+                        </svg>
+                        <span>Gallery</span>
+                    </a>
+                </li>
+
+                <li class="m-2 px-4 py-2 rounded-lg bg-slate-300 w-28 text-center hover:bg-blue-400">
+                    <a href="about_us.html" class="flex flex-col items-center justify-between">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#2563eb">
+                            <path
+                                d="M360-390q-21 0-35.5-14.5T310-440q0-21 14.5-35.5T360-490q21 0 35.5 14.5T410-440q0 21-14.5 35.5T360-390Zm240 0q-21 0-35.5-14.5T550-440q0-21 14.5-35.5T600-490q21 0 35.5 14.5T650-440q0 21-14.5 35.5T600-390ZM480-160q134 0 227-93t93-227q0-24-3-46.5T786-570q-21 5-42 7.5t-44 2.5q-91 0-172-39T390-708q-32 78-91.5 135.5T160-486v6q0 134 93 227t227 93Zm0 80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-54-715q42 70 114 112.5T700-640q14 0 27-1.5t27-3.5q-42-70-114-112.5T480-800q-14 0-27 1.5t-27 3.5ZM177-581q51-29 89-75t57-103q-51 29-89 75t-57 103Zm249-214Zm-103 36Z" />
+                        </svg>
+                        <span>About Us</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
     </header>
 
     <!--Hero section-->
-    <section class="h-96 pt-20 flex-col bg-bottom bg-cover bg-gradient-to-t: from-black to-transparent"
-        style="background-image: url(../img/alva-glen.jpeg);">
+    <section class="h-96 pt-20 flex-col bg-cover bg-center"
+        style="background-image: url(../resource/img/playground.jpg)">
 
-        <h3 class="bg-[rgba(0,0,0,0.5)] m-4 p-2 text-white w-1/2 font-semibold text-4xl">Providing a safe, fun and
+        <h3 class="bg-[rgba(0,0,0,0.5)] m-4 p-4 text-white w-1/2 font-semibold text-4xl">Providing a safe, fun and
             educational environment for
             your child</h3>
-        <a class="text-white text-semibold ml-16 mr-16 text-lg" href="#">Learn more...</a>
-        <a class="bg-yellow-400 text-black font-bold px-3 py-2 rounded-lg text-lg" href="#bookUs">Book us</a>
+        <a class="bg-yellow-400 text-black font-bold ml-4 px-3 py-2 rounded-lg text-lg" href="enquire.html">
+            <span>
+                Enquire now!
+            </span></a>
     </section>
 
     <!--Certificates section-->
     <div class=" text-center">
         <h3 class="text-center mb-4 py-7 text-xl bg-slate-400 text-white font-semibold">Certificates</h3>
         <section class="py-5 flex flex-row justify-around mb-8">
-            <img class="h-16 lg:h-24" src="../img/icon-cpd.png" alt="">
-            <img class="h-16 lg:h-24" src="../img/icon-scotland.png" alt="">
-            <img class="h-16 lg:h-24" src="../img/icon-training-express.png" alt="">
+            <img class="h-16 lg:h-24" src="../resource/img/icon-cpd.png" alt="">
+            <img class="h-16 lg:h-24" src="../resource/img/icon-scotland.png" alt="">
+            <img class="h-16 lg:h-24" src="../resource/img/icon-training-express.png" alt="">
         </section>
     </div>
 
@@ -55,12 +98,12 @@
 
         <article
             class="h-72 overflow-hidden shadow-xl flex flex-row justify-between bg-yellow-400 my-6 w-[90%] rounded-lg">
-            <img class="h-72 aspect-square object-cover" src="../img/ballon-day.jpg" alt="">
-            <div class="w-4/5 p-6 flex flex-col justify-center">
+            <img class="h-72 aspect-square object-cover" src="../resource/img/ballon-day.jpg" alt="">
+            <div class="w-4/5 p-6 flex flex-col justify-center  m-12">
 
                 <h4 class="font-bold text-3xl md:text-xl mb-4">Creative Arts and Crafts</h4>
 
-                <p class="hidden md:block ">Children love expressing themselves through arts and crafts. At Alva
+                <p class="hidden md:block">Children love expressing themselves through arts and crafts. At Alva
                     Childminding, kids can engage in
                     activities like painting, drawing, and making collages. These activities not only foster creativity
                     but
@@ -73,8 +116,8 @@
 
         <article
             class="h-72 overflow-hidden shadow-xl flex flex-row-reverse justify-between bg-red-400 my-6 w-[90%] rounded-lg">
-            <img class="h-72 aspect-square object-cover" src="../img/outside-walk.jpg" alt="">
-            <div class="w-4/5 p-6 flex flex-col justify-center">
+            <img class="h-72 aspect-square object-cover" src="../resource/img/outside-walk.jpg" alt="">
+            <div class="w-4/5 p-6 flex flex-col justify-center m-12">
 
                 <h4 class="font-bold text-3xl md:text-xl mb-4">Outdoor Play & Exploration</h4>
 
@@ -89,8 +132,8 @@
 
         <article
             class="h-72 overflow-hidden shadow-xl flex flex-row justify-between bg-green-400 my-6 w-[90%] rounded-lg">
-            <img class="h-72 aspect-square object-cover" src="../img/toddlers-book.jpg" alt="">
-            <div class="w-4/5 p-6 flex flex-col justify-center">
+            <img class="h-72 aspect-square object-cover" src="../resource/img/toddlers-book.jpg" alt="">
+            <div class="w-4/5 p-6 flex flex-col justify-center  m-12">
 
                 <h4 class="font-bold mb-4 text-3xl md:text-xl ">Circle time & Group activities</h4>
 
@@ -108,8 +151,8 @@
 
         <article
             class="h-72 overflow-hidden shadow-xl flex flex-row-reverse justify-between bg-blue-400 my-6 w-[90%] rounded-lg">
-            <img class="h-72 aspect-square object-cover" src="../img/sensory-toddler.png" alt="">
-            <div class="w-4/5 p-6 flex flex-col justify-center">
+            <img class="h-72 aspect-square object-cover" src="../resource/img/sensory-toddler.png" alt="">
+            <div class="w-4/5 p-6 flex flex-col justify-center  m-12">
 
                 <h4 class="font-bold mb-4 text-3xl md:text-xl ">Sensory Play</h4>
 
@@ -131,7 +174,7 @@
 
         <div class="flex flex-col lg:flex-row gap-8 items-center lg:items-start">
             <div class="items-center bg-white p-6 flex flex-col max-w-[80%] rounded-3xl">
-                <img class=" w-32 rounded-full" src="../img/avatar-1.png" alt="">
+                <img class=" w-32 rounded-full" src="../resource/img/avatar-1.png" alt="">
                 <p class="font-semibold bg-yellow-400 px-2 text-2xl text-center my-5 rounded-md h-7">Laura Smith</p>
                 <p class="text-lg">“Quality, Reliability, Responsiveness, Value. Sierra at Alva Childminding is a
                     fabulous care choice
@@ -142,7 +185,7 @@
                     outdoor for children.”</p>
             </div>
             <div class="items-center bg-white p-6 flex flex-col max-w-[80%] rounded-3xl">
-                <img class=" w-32 rounded-full" src="../img/avatar-2.png" alt="">
+                <img class=" w-32 rounded-full" src="../resource/img/avatar-2.png" alt="">
                 <p class="font-semibold bg-green-400 px-2 text-2xl text-center my-5 rounded-md h-7">Emily Johnson</p>
                 <p class="text-lg">“Alva Childminding has been a wonderful experience for our daughter. The environment
                     is nurturing and
@@ -153,7 +196,7 @@
                     go every day. Highly recommend!”</p>
             </div>
             <div class="items-center bg-white p-6 flex flex-col max-w-[80%] rounded-3xl">
-                <img class=" w-32 rounded-full" src="../img/avatar-3.png" alt="">
+                <img class=" w-32 rounded-full" src="../resource/img/avatar-3.png" alt="">
                 <p class="font-semibold bg-blue-400 px-2 text-2xl text-center my-5 rounded-md h-7">James Brown</p>
                 <p class="text-lg"> “Choosing Alva Childminding was the best decision we made for our son. Sierra’s
                     dedication and
@@ -173,15 +216,28 @@
 
         <section class="lg:w-1/4 w-52 h-auto m-10">
             <h2 class="text-white text-2xl">Contact information</h2>
-            <div class="flex flex-col justify-center gap-6 p-6">
-                <a target="_blank" href="https://www.facebook.com/AlvaChildminding"> <img src="../img/facebook-icon.png"
-                        alt="" class=" aspect-square w-8"></a>
-                <a href="tel:+4407940702161" class="text-white"><img src="../img/telephone-call.png" alt=""
-                        class=" aspect-square w-8"></a>
+            <div class="flex flex-col justify-start items-start gap-6 p-6 text-white">
+
+                <a target="_blank" href="https://www.facebook.com/AlvaChildminding" class="flex gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" fill="url(#a)" height="24" width="40"><defs><linearGradient x1="50%" x2="50%" y1="97.078%" y2="0%" id="a"><stop offset="0%" stop-color="#0062E0"/><stop offset="100%" stop-color="#19AFFF"/></linearGradient></defs><path d="M15 35.8C6.5 34.3 0 26.9 0 18 0 8.1 8.1 0 18 0s18 8.1 18 18c0 8.9-6.5 16.3-15 17.8l-1-.8h-4l-1 .8z"/><path fill="#FFF" d="m25 23 .8-5H21v-3.5c0-1.4.5-2.5 2.7-2.5H26V7.4c-1.3-.2-2.7-.4-4-.4-4.1 0-7 2.5-7 7v4h-4.5v5H15v12.7c1 .2 2 .3 3 .3s2-.1 3-.3V23h4z"/></svg>
+                    <span>Facebook</span>
+                </a>
+
+                <a href="tel:+4407940702161" class="text-white flex gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
+                    <span>
+                        (+44) 079 40 702 161
+                    </span>
+                </a>
+
+                <a href="alvachildminding@gmail.com"  class="flex gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
+                    <span>Alvachildminding@gmail.com</span>
+                </a>
             </div>
         </section>
 
-        <section class="w-full lg:w-1/4 h-auto pt-14 flex flex-col justify-center items-center lg:flex-grow">
+        <section class="w-full lg:w-1/4 h-auto pt-14 flex flex-col justify-center items-start lg:flex-grow">
             <h2 class="text-white text-2xl">Where to find us</h2>
             <iframe class="w-96 h-[360px]"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2222.344458376497!2d-3.8035928639045453!3d56.15114872889335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488881674c0307af%3A0x66d911418d1634c1!2sAlva%20Childminding%20Service%20(Sierra)!5e0!3m2!1ses!2suk!4v1724343256548!5m2!1ses!2suk"
